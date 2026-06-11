@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chéri Cafe & Eatery | Chhatrapati Sambhajinagar</title>
+    <meta name="description" content="Chéri Cafe & Eatery — an elegant yet cozy cafe in Chhatrapati Sambhajinagar offering continental, North Indian & European cuisines. Rated 4.7/5 on Google.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-inner">
+            <div class="loader-line"></div>
+            <span class="loader-text">Chéri</span>
+        </div>
+    </div>
+
+    <!-- Cursor follower -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#hero" class="nav-logo">Chéri</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Visit Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="https://itin-dev.wanderlogstatic.com/freeImage/TFotitVjvPdu2vXyFOwlN10gm4CEsKiK" alt="Chéri Cafe Interior" class="hero-bg-img">
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge reveal-up">Est. Chhatrapati Sambhajinagar</div>
+            <h1 class="hero-title">
+                <span class="reveal-up" style="--delay: 0.2s">Chéri</span>
+                <span class="hero-title-line2 reveal-up" style="--delay: 0.4s">Cafe & Eatery</span>
+            </h1>
+            <p class="hero-subtitle reveal-up" style="--delay: 0.6s">Where elegance meets comfort — crafted flavors, warm moments, and a cozy escape in the heart of the city.</p>
+            <div class="hero-cta reveal-up" style="--delay: 0.8s">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="#contact" class="btn btn-outline">Reserve a Table</a>
+            </div>
+            <div class="hero-stats reveal-up" style="--delay: 1s">
+                <div class="stat">
+                    <span class="stat-number" data-count="4.7">0</span>
+                    <span class="stat-label">Google Rating</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="126">0</span>
+                    <span class="stat-label">Reviews</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Star Service</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-img-main reveal-left">
+                        <img src="https://itin-dev.wanderlogstatic.com/freeImage/boVpNC9AO68SRRTOInSOPO0H3ZljMxGp" alt="Chéri Cafe Entrance — dark wood facade with golden neon signage" loading="lazy">
+                    </div>
+                    <div class="about-img-accent reveal-left" style="--delay: 0.2s">
+                        <img src="https://itin-dev.wanderlogstatic.com/freeImage/7XJ2OReLCZ7ppUBMbNkM3dyG0c3q2Y3C" alt="Chéri Cafe food plating with signature menu booklet" loading="lazy">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag reveal-up">Our Story</span>
+                    <h2 class="section-title reveal-up" style="--delay: 0.1s">A Hidden Gem That<br><em>Blends Style & Flavor</em></h2>
+                    <p class="about-text reveal-up" style="--delay: 0.2s">
+                        Nestled on the first floor of CK Tower in Dashmesh Nagar, <strong>Chéri Cafe & Eatery</strong> is where elegance meets comfort. Our thoughtfully curated decor creates a warm, inviting atmosphere — whether you're here for a coffee date, a casual dinner, a solo work session, or a gathering with friends.
+                    </p>
+                    <p class="about-text reveal-up" style="--delay: 0.3s">
+                        We believe every dish should be a celebration. From our signature continental plates to beloved North Indian classics, each creation is bursting with flavor and beautifully presented. Our top-notch coffee and irresistible desserts keep guests coming back.
+                    </p>
+                    <div class="about-features reveal-up" style="--delay: 0.4s">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <div>
+                                <h4>Continental & Indian</h4>
+                                <p>A diverse menu spanning European, North Indian & Chinese cuisines</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Cozy Ambiance</h4>
+                                <p>Elegant yet warm setting with live music nights</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Pure Vegetarian</h4>
+                                <p>Thoughtfully crafted vegetarian-friendly menu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span>Aglio Olio</span><span class="marquee-dot"></span>
+                <span>Alfredo Pasta</span><span class="marquee-dot"></span>
+                <span>Mac & Cheese</span><span class="marquee-dot"></span>
+                <span>Singapore Rice</span><span class="marquee-dot"></span>
+                <span>Chilli Paneer</span><span class="marquee-dot"></span>
+                <span>Burnt Garlic Noodles</span><span class="marquee-dot"></span>
+                <span>Caprese Salad</span><span class="marquee-dot"></span>
+                <span>Paneer Burrito Bowl</span><span class="marquee-dot"></span>
+                <span>Aglio Olio</span><span class="marquee-dot"></span>
+                <span>Alfredo Pasta</span><span class="marquee-dot"></span>
+                <span>Mac & Cheese</span><span class="marquee-dot"></span>
+                <span>Singapore Rice</span><span class="marquee-dot"></span>
+                <span>Chilli Paneer</span><span class="marquee-dot"></span>
+                <span>Burnt Garlic Noodles</span><span class="marquee-dot"></span>
+                <span>Caprese Salad</span><span class="marquee-dot"></span>
+                <span>Paneer Burrito Bowl</span><span class="marquee-dot"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Section -->
+    <section class="section menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">The Menu</span>
+                <h2 class="section-title reveal-up" style="--delay: 0.1s">Crafted with <em>Passion</em></h2>
+                <p class="section-desc reveal-up" style="--delay: 0.2s">Every dish tells a story — from signature continental plates to beloved Indian classics, our menu celebrates flavor in every bite.</p>
+            </div>
+
+            <!-- Menu Filter -->
+            <div class="menu-filter reveal-up" style="--delay: 0.3s">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="soups">Soups</button>
+                <button class="filter-btn" data-filter="salads">Salads</button>
+                <button class="filter-btn" data-filter="sandwiches">Bites & Breads</button>
+                <button class="filter-btn" data-filter="pasta">Pasta</button>
+                <button class="filter-btn" data-filter="noodles">Noodles</button>
+                <button class="filter-btn" data-filter="rice">Asian Rice</button>
+                <button class="filter-btn" data-filter="bowls">Bowls</button>
+                <button class="filter-btn" data-filter="chinese">Desi Chinese</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Soups -->
+                <div class="menu-card reveal-up" data-category="soups">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🍅</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Tomato Soup</h3>
+                            <span class="menu-price">₹99</span>
+                        </div>
+                        <p>Creamy tomato blend with herbs.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="soups" style="--delay: 0.1s">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🍜</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Manchow Soup</h3>
+                            <span class="menu-price">₹89</span>
+                        </div>
+                        <p>Spicy veggie soup with crispy noodles.</p>
+                        <span class="menu-tag">Popular</span>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="soups" style="--delay: 0.2s">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🧅</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>French Onion Soup</h3>
+                            <span class="menu-price">₹79</span>
+                        </div>
+                        <p>Rich onion broth with toasted bread.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="soups">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🥦</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Broccoli Soup</h3>
+                            <span class="menu-price">₹99</span>
+                        </div>
+                        <p>Smooth, creamy broccoli delight.</p>
+                    </div>
+                </div>
+
+                <!-- Salads -->
+                <div class="menu-card reveal-up" data-category="salads">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🥗</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Caesar Salad</h3>
+                            <span class="menu-price">₹129</span>
+                        </div>
+                        <p>Crisp lettuce, croutons & dressing — classic style.</p>
+                        <span class="menu-tag">Popular</span>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="salads" style="--delay: 0.1s">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🧀</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Caprese Salad</h3>
+                            <span class="menu-price">₹159</span>
+                        </div>
+                        <p>Tomato, mozzarella & basil with olive oil drizzle.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="salads" style="--delay: 0.2s">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🫕</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Paneer Tikka Salad</h3>
+                            <span class="menu-price">₹159</span>
+                        </div>
+                        <p>Spiced grilled paneer with veggies & tangy dressing.</p>
+                        <span class="menu-tag">Must Try</span>
+                    </div>
+                </div>
+
+                <!-- Bites & Breads (Sandwiches) -->
+                <div class="menu-card reveal-up" data-category="sandwiches">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🥔</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Bombay Patata Sandwich</h3>
+                            <span class="menu-price">₹129</span>
+                        </div>
+                        <p>Spicy mashed potato, classic Mumbai style.</p>
+                        <span class="menu-tag">Bestseller</span>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="sandwiches" style="--delay: 0.1s">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🍄</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Mushroom & Swiss Cheese</h3>
+                            <span class="menu-price">₹139</span>
+                        </div>
+                        <p>Sautéed mushrooms and Swiss cheese sandwich.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="sandwiches" style="--delay: 0.2s">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🫓</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Paneer Tikka Sandwich</h3>
+                            <span class="menu-price">₹149</span>
+                        </div>
+                        <p>Paneer tikka filling with light spices.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="sandwiches">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🌱</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Sourdough Vegan Sandwich</h3>
+                            <span class="menu-price">₹229</span>
+                        </div>
+                        <p>Fresh veggies with vegan spread on sourdough.</p>
+                        <span class="menu-tag">Vegan</span>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="sandwiches" style="--delay: 0.1s">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🌮</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Mexican Protein Sandwich</h3>
+                            <span class="menu-price">₹229</span>
+                        </div>
+                        <p>Spicy beans, corn, and protein mix with salsa.</p>
+                    </div>
+                </div>
+
+                <!-- Pasta -->
+                <div class="menu-card reveal-up" data-category="pasta">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🍝</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Aglio Olio</h3>
+                            <span class="menu-price">₹179</span>
+                        </div>
+                        <p>Classic olive oil, garlic & chili flakes.</p>
+                        <span class="menu-tag">Chef's Pick</span>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="pasta" style="--delay: 0.1s">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🍝</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Alfredo Pasta</h3>
+                            <span class="menu-price">₹189</span>
+                        </div>
+                        <p>Creamy cheese sauce — comfort food at its finest.</p>
+                        <span class="menu-tag">Bestseller</span>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="pasta" style="--delay: 0.2s">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🌿</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Pesto Pasta</h3>
+                            <span class="menu-price">₹189</span>
+                        </div>
+                        <p>Basil pesto with parmesan.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="pasta">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🧀</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Mac & Cheese</h3>
+                            <span class="menu-price">₹189</span>
+                        </div>
+                        <p>Creamy, cheesy comfort.</p>
+                        <span class="menu-tag">Popular</span>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="pasta" style="--delay: 0.1s">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🍝</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Marinara Pasta</h3>
+                            <span class="menu-price">₹179</span>
+                        </div>
+                        <p>Fresh tomato sauce with herbs.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="pasta" style="--delay: 0.2s">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">💪</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Vegan Protein Pasta</h3>
+                            <span class="menu-price">₹229</span>
+                        </div>
+                        <p>Plant protein with dairy-free sauce.</p>
+                        <span class="menu-tag">Vegan</span>
+                    </div>
+                </div>
+
+                <!-- Noodles -->
+                <div class="menu-card reveal-up" data-category="noodles">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🍜</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Hakka Noodles</h3>
+                            <span class="menu-price">₹129</span>
+                        </div>
+                        <p>Classic stir-fried noodles with vegetables.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="noodles" style="--delay: 0.1s">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🌶️</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Schezwan Noodles</h3>
+                            <span class="menu-price">₹139</span>
+                        </div>
+                        <p>Spicy Indo-Chinese noodles with schezwan sauce.</p>
+                        <span class="menu-tag">Bestseller</span>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="noodles" style="--delay: 0.2s">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🍜</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Singapuri Noodles</h3>
+                            <span class="menu-price">₹149</span>
+                        </div>
+                        <p>Spicy & tangy noodles with bold flavors.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="noodles">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🧄</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Burnt Garlic Noodles</h3>
+                            <span class="menu-price">₹159</span>
+                        </div>
+                        <p>Noodles tossed with burnt garlic and spices.</p>
+                        <span class="menu-tag">Must Try</span>
+                    </div>
+                </div>
+
+                <!-- Asian Rice -->
+                <div class="menu-card reveal-up" data-category="rice">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🍚</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Classic Fried Rice</h3>
+                            <span class="menu-price">₹129</span>
+                        </div>
+                        <p>Stir-fried rice with veggies and soy.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="rice" style="--delay: 0.1s">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🌶️</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Schezwan Fried Rice</h3>
+                            <span class="menu-price">₹139</span>
+                        </div>
+                        <p>Spicy rice tossed in schezwan sauce.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="rice" style="--delay: 0.2s">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🍛</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Singapore Rice</h3>
+                            <span class="menu-price">₹149</span>
+                        </div>
+                        <p>Mildly spiced rice with veggies and herbs.</p>
+                        <span class="menu-tag">Popular</span>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="rice">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🧄</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Burnt Garlic Rice</h3>
+                            <span class="menu-price">₹159</span>
+                        </div>
+                        <p>Aromatic rice tossed with roasted garlic.</p>
+                    </div>
+                </div>
+
+                <!-- Bowls -->
+                <div class="menu-card reveal-up" data-category="bowls">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🥙</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Veg Burrito Bowl</h3>
+                            <span class="menu-price">₹149</span>
+                        </div>
+                        <p>Rice, beans, veggies, salsa & sauces.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="bowls" style="--delay: 0.1s">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🥙</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Paneer Burrito Bowl</h3>
+                            <span class="menu-price">₹159</span>
+                        </div>
+                        <p>Rice, beans, spiced paneer, salsa & sauces.</p>
+                        <span class="menu-tag">Must Try</span>
+                    </div>
+                </div>
+
+                <!-- Desi Chinese Bites -->
+                <div class="menu-card reveal-up" data-category="chinese">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🥔</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Schezwan Potato Fingers</h3>
+                            <span class="menu-price">₹139</span>
+                        </div>
+                        <p>Crispy potato fingers tossed in spicy schezwan sauce.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="chinese" style="--delay: 0.1s">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🥘</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Veg Manchurian Balls</h3>
+                            <span class="menu-price">₹179</span>
+                        </div>
+                        <p>Fried veggie balls in sweet & spicy Chinese sauce.</p>
+                        <span class="menu-tag">Bestseller</span>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal-up" data-category="chinese" style="--delay: 0.2s">
+                    <div class="menu-card-img">
+                        <div class="menu-emoji">🧊</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Chilli Paneer</h3>
+                            <span class="menu-price">₹199</span>
+                        </div>
+                        <p>Cubes of paneer tossed in hot chilli-garlic sauce.</p>
+                        <span class="menu-tag">Popular</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-note reveal-up">
+                <p>For the full menu and online ordering, visit us on <a href="https://www.zomato.com/aurangabad/cheri-cafe-eatery-usmanpura" target="_blank" rel="noopener">Zomato</a> or <a href="https://www.swiggy.com/city/aurangabad/sheri-cheri-cafe-and-eatery-usmanpura-rest1108624" target="_blank" rel="noopener">Swiggy</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">Gallery</span>
+                <h2 class="section-title reveal-up" style="--delay: 0.1s">A Glimpse Inside <em>Chéri</em></h2>
+                <p class="section-desc reveal-up" style="--delay: 0.2s">Elegant interiors, beautifully plated dishes, and moments that make every visit special.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-tall reveal-up">
+                    <img src="https://itin-dev.wanderlogstatic.com/freeImage/TFotitVjvPdu2vXyFOwlN10gm4CEsKiK" alt="Chéri Cafe cozy interior with elegant decor" loading="lazy">
+                </div>
+                <div class="gallery-item reveal-up" style="--delay: 0.1s">
+                    <img src="https://itin-dev.wanderlogstatic.com/freeImage/7XJ2OReLCZ7ppUBMbNkM3dyG0c3q2Y3C" alt="Beautifully plated food with Chéri menu booklet" loading="lazy">
+                </div>
+                <div class="gallery-item reveal-up" style="--delay: 0.2s">
+                    <img src="https://itin-dev.wanderlogstatic.com/freeImage/boVpNC9AO68SRRTOInSOPO0H3ZljMxGp" alt="Chéri Cafe entrance with golden neon signage" loading="lazy">
+                </div>
+                <div class="gallery-item gallery-item-wide reveal-up" style="--delay: 0.1s">
+                    <img src="https://b.zmtcdn.com/data/pictures/chains/3/21943723/1748360727e7b60902-576c-4661-a250-12cee5611a0c.jpg" alt="Grilled sandwich with chips at Chéri Cafe" loading="lazy">
+                </div>
+                <div class="gallery-item reveal-up" style="--delay: 0.2s">
+                    <img src="https://itin-dev.wanderlogstatic.com/freeImage/H1oV1sxaHysgvlEQOtwgZgUSqIGJFhSp" alt="Chéri Cafe menu — pasta, rice, noodles and more" loading="lazy">
+                </div>
+                <div class="gallery-item reveal-up" style="--delay: 0.3s">
+                    <img src="https://b.zmtcdn.com/data/menus/723/21943723/c2881b8ef4cec534005cd9227103bebc.png" alt="Chéri Cafe menu — soups, salads and sandwiches" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">Testimonials</span>
+                <h2 class="section-title reveal-up" style="--delay: 0.1s">What Our Guests <em>Say</em></h2>
+                <div class="reviews-summary reveal-up" style="--delay: 0.2s">
+                    <div class="rating-big">
+                        <span class="rating-number">4.7</span>
+                        <div class="rating-stars">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star half">★</span>
+                        </div>
+                        <span class="rating-source">Based on 126 Google Reviews</span>
+                    </div>
+                    <div class="rating-bars">
+                        <div class="rating-bar-row">
+                            <span>5 ★</span>
+                            <div class="rating-bar"><div class="rating-bar-fill" style="--width: 82%"></div></div>
+                            <span>103</span>
+                        </div>
+                        <div class="rating-bar-row">
+                            <span>4 ★</span>
+                            <div class="rating-bar"><div class="rating-bar-fill" style="--width: 10%"></div></div>
+                            <span>13</span>
+                        </div>
+                        <div class="rating-bar-row">
+                            <span>3 ★</span>
+                            <div class="rating-bar"><div class="rating-bar-fill" style="--width: 2%"></div></div>
+                            <span>3</span>
+                        </div>
+                        <div class="rating-bar-row">
+                            <span>2 ★</span>
+                            <div class="rating-bar"><div class="rating-bar-fill" style="--width: 2%"></div></div>
+                            <span>3</span>
+                        </div>
+                        <div class="rating-bar-row">
+                            <span>1 ★</span>
+                            <div class="rating-bar"><div class="rating-bar-fill" style="--width: 3%"></div></div>
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-carousel">
+                <div class="reviews-track" id="reviewsTrack">
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"A hidden gem! The ambiance is elegant yet cozy with thoughtfully curated decor. Every dish we tried was bursting with flavor and beautifully presented. The Alfredo Pasta and Tiramisu were absolutely divine!"</p>
+                        <div class="review-author">
+                            <div class="author-avatar">P</div>
+                            <div>
+                                <strong>Priya M.</strong>
+                                <span>Google Review</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Top-notch coffee and irresistible desserts! The staff is so friendly and attentive — they genuinely care about the customer experience. Perfect spot for a coffee date or casual dinner. The Honey Chilli Fries are a must-try!"</p>
+                        <div class="review-author">
+                            <div class="author-avatar">R</div>
+                            <div>
+                                <strong>Rahul S.</strong>
+                                <span>Google Review</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"This cafe effortlessly blends style, comfort, and flavor. The warm, inviting atmosphere makes it perfect for solo work sessions or group gatherings. The Aglio Olio and Singapore Rice were fantastic. Highly recommend!"</p>
+                        <div class="review-author">
+                            <div class="author-avatar">A</div>
+                            <div>
+                                <strong>Ayesha K.</strong>
+                                <span>Google Review</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Visited for the first time and was blown away! The Paneer Tikka Pizza is a fusion masterpiece. The decor is Instagram-worthy, and the live music nights add such a wonderful vibe. Already planning my next visit!"</p>
+                        <div class="review-author">
+                            <div class="author-avatar">S</div>
+                            <div>
+                                <strong>Siddharth T.</strong>
+                                <span>Google Review</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Reasonably priced with generous portions. The owner is humble and the staff makes you feel at home. Best cafe in Sambhajinagar, hands down. The Manchurian and Schezwan Rice are packed with bold flavors!"</p>
+                        <div class="review-author">
+                            <div class="author-avatar">N</div>
+                            <div>
+                                <strong>Nisha D.</strong>
+                                <span>Google Review</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"A cozy escape in the heart of the city. The coffee art is beautiful and the cappuccino is the best I've had in town. The ambiance with dim lighting and tasteful decor makes every visit feel special."</p>
+                        <div class="review-author">
+                            <div class="author-avatar">V</div>
+                            <div>
+                                <strong>Vikram J.</strong>
+                                <span>Google Review</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" id="prevReview" aria-label="Previous review">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn next" id="nextReview" aria-label="Next review">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-content reveal-up">
+                <h2>Ready for a <em>Chéri</em> Experience?</h2>
+                <p>Join us for an unforgettable dining experience — great food, warm vibes, and moments to cherish.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+918999133147" class="btn btn-primary">Call to Reserve</a>
+                    <a href="https://www.zomato.com/aurangabad/cheri-cafe-eatery-usmanpura/order" target="_blank" rel="noopener" class="btn btn-outline">Order on Zomato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">Visit Us</span>
+                <h2 class="section-title reveal-up" style="--delay: 0.1s">Find Your Way to <em>Chéri</em></h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card reveal-up">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>1st Floor, CK Tower, Dashmesh Nagar Rd,<br>Near Tapadiya Innovations School,<br>New Usmanpura, Chhatrapati Sambhajinagar,<br>Maharashtra 431001</p>
+                        </div>
+                    </div>
+                    <div class="contact-card reveal-up" style="--delay: 0.1s">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+918999133147">+91 89991 33147</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card reveal-up" style="--delay: 0.2s">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        </div>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Open Daily<br><strong>11:00 AM — 3:00 AM</strong></p>
+                        </div>
+                    </div>
+                    <div class="contact-card reveal-up" style="--delay: 0.3s">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                        </div>
+                        <div>
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/cheri_cafeandeatery/" target="_blank" rel="noopener" aria-label="Instagram">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg>
+                                </a>
+                                <a href="https://www.zomato.com/aurangabad/cheri-cafe-eatery-usmanpura" target="_blank" rel="noopener" aria-label="Zomato">Z</a>
+                                <a href="https://maps.google.com/?q=Chéri+Cafe+%26+Eatery+Chhatrapati+Sambhajinagar" target="_blank" rel="noopener" aria-label="Google Maps">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map reveal-up" style="--delay: 0.2s">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.1!2d75.3318135!3d19.8660734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDUxJzU3LjkiTiA3NcKwMTknNTQuNSJF!5e0!3m2!1sen!2sin!4v1"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Chéri Cafe & Eatery Location">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Chéri</h3>
+                    <p>Cafe & Eatery</p>
+                    <p class="footer-tagline">Where elegance meets comfort.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <a href="#about">About Us</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#reviews">Reviews</a>
+                    <a href="#contact">Visit Us</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Order Online</h4>
+                    <a href="https://www.zomato.com/aurangabad/cheri-cafe-eatery-usmanpura/order" target="_blank" rel="noopener">Zomato</a>
+                    <a href="https://www.swiggy.com/city/aurangabad/sheri-cheri-cafe-and-eatery-usmanpura-rest1108624" target="_blank" rel="noopener">Swiggy</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Contact</h4>
+                    <a href="tel:+918999133147">+91 89991 33147</a>
+                    <a href="https://maps.google.com/?q=Chéri+Cafe+%26+Eatery+Chhatrapati+Sambhajinagar" target="_blank" rel="noopener">Get Directions</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Chéri Cafe & Eatery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
