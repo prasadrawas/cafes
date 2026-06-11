@@ -366,7 +366,7 @@
   }
 
   // --- Reservation Modal ---
-  const GOOGLE_SCRIPT_URL = 'PASTE_YOUR_GOOGLE_SCRIPT_URL_HERE';
+  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxVRs4LsvaZ99yhT9SxENwU2XKhRYAprpWgv7q4pRaUfjI3CrOTGKyvAUI5y30VLDwi/exec';
 
   const modal = document.getElementById('reservationModal');
   const form = document.getElementById('reservationForm');
