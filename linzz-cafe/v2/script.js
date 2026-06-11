@@ -131,7 +131,7 @@
           const parent = entry.target.parentElement;
           const siblings = parent ? Array.from(parent.querySelectorAll('.reveal-up')) : [];
           const sibIndex = siblings.indexOf(entry.target);
-          const delay = sibIndex >= 0 ? sibIndex * 80 : 0;
+          const delay = sibIndex >= 0 ? sibIndex * 40 : 0;
 
           setTimeout(() => {
             entry.target.classList.add('visible');
