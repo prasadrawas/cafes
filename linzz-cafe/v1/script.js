@@ -365,4 +365,124 @@
     });
   }
 
+  // --- Reservation Modal ---
+  const GOOGLE_SCRIPT_URL = 'PASTE_YOUR_GOOGLE_SCRIPT_URL_HERE';
+
+  const modal = document.getElementById('reservationModal');
+  const form = document.getElementById('reservationForm');
+  const successDiv = document.getElementById('reservationSuccess');
+  const errorDiv = document.getElementById('reservationError');
+  const submitBtn = document.getElementById('submitReservation');
+  const btnText = submitBtn ? submitBtn.querySelector('.btn-text') : null;
+  const btnLoader = submitBtn ? submitBtn.querySelector('.btn-loader') : null;
+
+  function openModal() {
+    if (modal) {
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeModal() {
+    if (modal) {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+
+  function resetModal() {
+    if (form) form.style.display = '';
+    if (successDiv) successDiv.style.display = 'none';
+    if (errorDiv) errorDiv.style.display = 'none';
+    if (btnText) btnText.style.display = '';
+    if (btnLoader) btnLoader.style.display = 'none';
+    if (submitBtn) submitBtn.disabled = false;
+  }
+
+  // Set min date to today
+  const dateInput = document.getElementById('res-date');
+  if (dateInput) {
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.setAttribute('min', today);
+  }
+
+  // Open modal triggers
+  document.querySelectorAll('#openReservationHero, #openReservationCta, [data-open-reservation]').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      resetModal();
+      openModal();
+    });
+  });
+
+  // Close modal
+  if (document.getElementById('closeReservation')) {
+    document.getElementById('closeReservation').addEventListener('click', closeModal);
+  }
+  if (document.getElementById('closeSuccess')) {
+    document.getElementById('closeSuccess').addEventListener('click', function() {
+      closeModal();
+      if (form) form.reset();
+      resetModal();
+    });
+  }
+  if (document.getElementById('retryReservation')) {
+    document.getElementById('retryReservation').addEventListener('click', function() {
+      resetModal();
+    });
+  }
+
+  // Close on overlay click
+  if (modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) closeModal();
+    });
+  }
+
+  // Close on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && modal && modal.classList.contains('active')) closeModal();
+  });
+
+  // Form submission
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var data = {
+        name: document.getElementById('res-name').value.trim(),
+        phone: document.getElementById('res-phone').value.trim(),
+        date: document.getElementById('res-date').value,
+        time: document.getElementById('res-time').value,
+        guests: document.getElementById('res-guests').value,
+        occasion: document.getElementById('res-occasion').value,
+        requests: document.getElementById('res-requests').value.trim()
+      };
+
+      // Validate
+      if (!data.name || !data.phone || !data.date || !data.time || !data.guests) return;
+
+      // Show loading
+      if (btnText) btnText.style.display = 'none';
+      if (btnLoader) btnLoader.style.display = 'inline';
+      submitBtn.disabled = true;
+
+      fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(function() {
+        form.style.display = 'none';
+        successDiv.style.display = 'block';
+        form.reset();
+      })
+      .catch(function() {
+        form.style.display = 'none';
+        errorDiv.style.display = 'block';
+      });
+    });
+  }
+
 })();

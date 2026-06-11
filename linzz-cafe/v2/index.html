@@ -89,7 +89,7 @@
       <p class="hero-tagline reveal-up">Authentic Eats &bull; Expertly Crafted Coffee</p>
       <div class="hero-ctas reveal-up">
         <a href="#menu" class="btn btn-primary">Explore Menu</a>
-        <a href="#contact" class="btn btn-outline">Visit Us</a>
+        <button class="btn btn-outline" id="openReservationHero">Reserve a Table</button>
       </div>
       <div class="hero-stats reveal-up">
         <div class="stat">
@@ -661,8 +661,8 @@
         <h2 class="cta-title">Visit Linzz <span class="accent">Today</span></h2>
         <p class="cta-text">Experience the perfect blend of flavors, coffee, and ambience. Open daily from 11:30 AM to 12:30 AM.</p>
         <div class="cta-buttons">
-          <a href="https://www.zomato.com/aurangabad/linzz-cidco" target="_blank" rel="noopener" class="btn btn-primary">Order on Zomato</a>
-          <a href="https://www.google.com/maps/search/?api=1&query=19.8755,75.3622" target="_blank" rel="noopener" class="btn btn-outline-light">Get Directions</a>
+          <button class="btn btn-primary" id="openReservationCta">Reserve a Table</button>
+          <a href="https://www.zomato.com/aurangabad/linzz-cidco" target="_blank" rel="noopener" class="btn btn-outline-light">Order on Zomato</a>
         </div>
       </div>
     </div>
@@ -767,6 +767,121 @@
       </div>
     </div>
   </footer>
+
+  <!-- Reservation Modal -->
+  <div class="modal-overlay" id="reservationModal">
+    <div class="modal">
+      <button class="modal-close" id="closeReservation" aria-label="Close">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag">Reservation</span>
+        <h2 class="modal-title">Reserve a <span class="accent">Table</span></h2>
+        <p class="modal-subtitle">Book your spot at Linzz Cafe</p>
+      </div>
+      <form class="reservation-form" id="reservationForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="res-name">Full Name *</label>
+            <input type="text" id="res-name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="res-phone">Phone Number *</label>
+            <input type="tel" id="res-phone" name="phone" placeholder="+91 XXXXX XXXXX" pattern="[0-9+\s\-]{10,15}" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="res-date">Date *</label>
+            <input type="date" id="res-date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label for="res-time">Time Slot *</label>
+            <select id="res-time" name="time" required>
+              <option value="" disabled selected>Select time</option>
+              <option>11:30 AM</option>
+              <option>12:00 PM</option>
+              <option>12:30 PM</option>
+              <option>1:00 PM</option>
+              <option>1:30 PM</option>
+              <option>2:00 PM</option>
+              <option>2:30 PM</option>
+              <option>3:00 PM</option>
+              <option>3:30 PM</option>
+              <option>4:00 PM</option>
+              <option>4:30 PM</option>
+              <option>5:00 PM</option>
+              <option>5:30 PM</option>
+              <option>6:00 PM</option>
+              <option>6:30 PM</option>
+              <option>7:00 PM</option>
+              <option>7:30 PM</option>
+              <option>8:00 PM</option>
+              <option>8:30 PM</option>
+              <option>9:00 PM</option>
+              <option>9:30 PM</option>
+              <option>10:00 PM</option>
+              <option>10:30 PM</option>
+              <option>11:00 PM</option>
+              <option>11:30 PM</option>
+              <option>12:00 AM</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="res-guests">Number of Guests *</label>
+            <select id="res-guests" name="guests" required>
+              <option value="" disabled selected>Select</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7-8</option>
+              <option>9-10</option>
+              <option>11-15</option>
+              <option>16-20</option>
+              <option>20+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="res-occasion">Occasion</label>
+            <select id="res-occasion" name="occasion">
+              <option value="Casual Visit" selected>Casual Visit</option>
+              <option>Birthday</option>
+              <option>Anniversary</option>
+              <option>Date Night</option>
+              <option>Friends Gathering</option>
+              <option>Business Meeting</option>
+              <option>Family Dinner</option>
+              <option>Celebration</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group full-width">
+          <label for="res-requests">Special Requests <span class="optional">(optional)</span></label>
+          <textarea id="res-requests" name="requests" rows="3" placeholder="Any dietary needs, seating preference, decorations..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit" id="submitReservation">
+          <span class="btn-text">Confirm Reservation</span>
+          <span class="btn-loader" style="display:none;">Booking...</span>
+        </button>
+      </form>
+      <div class="reservation-success" id="reservationSuccess" style="display:none;">
+        <div class="success-icon">&#10003;</div>
+        <h3>Reservation Confirmed!</h3>
+        <p>We've received your booking. The cafe will confirm shortly via phone.</p>
+        <button class="btn btn-outline" id="closeSuccess">Done</button>
+      </div>
+      <div class="reservation-error" id="reservationError" style="display:none;">
+        <div class="error-icon">!</div>
+        <h3>Something went wrong</h3>
+        <p>Please try again or contact us on Instagram.</p>
+        <button class="btn btn-outline" id="retryReservation">Try Again</button>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
