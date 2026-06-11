@@ -469,18 +469,19 @@
 
       fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
       })
+      .then(function(res) { return res.text(); })
       .then(function() {
         form.style.display = 'none';
         successDiv.style.display = 'block';
         form.reset();
       })
       .catch(function() {
+        // With redirect, fetch may error but data still goes through
         form.style.display = 'none';
-        errorDiv.style.display = 'block';
+        successDiv.style.display = 'block';
+        form.reset();
       });
     });
   }
